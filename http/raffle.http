@@ -1,0 +1,31 @@
+### Submit raffle
+POST http://localhost:8080/raffle/0x0123456789aaaaazzzzzAAAAAZZZZZ0123456789/submit
+Content-Type: application/json
+
+["12345", "23456"]
+
+
+### Submit raffle with invalid address
+POST http://localhost:8080/raffle/abcdeg/submit
+Content-Type: application/json
+
+["12345", "23456"]
+
+
+### Submit raffle with invalid code list
+POST http://localhost:8080/raffle/0x0123456789aaaaazzzzzAAAAAZZZZZ0123456789/submit
+Content-Type: application/json
+
+["12345", "1", "123456", "1234d", "1234$", "11111"]
+
+
+### Get raffle by address
+GET http://localhost:8080/raffle/0x0123456789aaaaazzzzzAAAAAZZZZZ0123456789
+
+
+### Get raffle by not existing address
+GET http://localhost:8080/raffle/0x0123456789aaaaazzzzzAAAAAZZZZZ0123456666
+
+
+### Get all raffles
+GET http://localhost:8080/raffle/all
