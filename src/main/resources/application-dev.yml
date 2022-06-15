@@ -1,0 +1,4 @@
+logging:
+  level:
+    com.gk.springbootskeleton: DEBUG
+    org.springframework.web: DEBUG

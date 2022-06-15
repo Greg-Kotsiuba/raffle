@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-boot-skeleton
+
+logging:
+  level:
+    com.gk.springbootskeleton: INFO
+
+server:
+  port: ${SERVER_PORT:8080}
